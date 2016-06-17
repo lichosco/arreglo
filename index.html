@@ -1,0 +1,100 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+  <script type="text/javascript" src="dni.js">
+  </script>
+	<!--<form name="formulario"> 
+DNI:<br> 
+<input type="text" name="dni" maxlenght="11" size="11"> 
+<input type="button" value="OK" language"JavaScript" onclick="averigua()"> 
+</form>-->
+	
+	<!--<script> 
+function averigua () 
+{ 
+cadena="TRWAGMYFPDXBNJZSQVHLCKET" 
+posicion = formulario.dni.value % 23 
+letra = cadena.substring(posicion,posicion+1) 
+document.formulario.dni.value=formulario.dni.value+" - "+letra 
+} 
+</script>
+
+
+	<script type="text/javascript">
+     var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
+ 
+    var numero = prompt("Ingresa tu numero DNI)");
+    var letra = prompt("Ingresa la letra de tu DNI");
+    letra = letra.toUpperCase();
+ 
+if(numero < 0 || numero > 99999999) {
+  alert("El número proporcionado no es válido");
+}
+else {
+  var letraCalculada = numero%23;
+  for(i=0; i<letras.length)
+  {
+  	if(letraCalculada===0)
+  	{
+  		alert
+  	}
+
+  }
+  if(letraCalculada===0) {
+    alert("La letra es" letras[0]);
+
+  }
+  else {
+    alert("El número de DNI y su letra son correctos");
+  }
+  if(letraCalculada%23===0)
+  {
+  	alert("Su letra dni es:"+ letras[0]);
+  }
+}
+ 
+</script>-->
+
+<!--DNI
+<script>
+	var letras= ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
+	var dni= prompt("Ingrese su DNI");
+	total=dni%23;
+	if(dni<99999999)
+	{
+		alert("INVALIDO");
+	}
+	else
+		if(dni>0)
+		{
+			alert("su letra dni es "+ letras[total]);
+		}
+</script>-->
+<!--Ingresar nombres
+<script>
+var nombres= [];
+var nomb;
+do
+{
+  nomb=prompt("Ingrese nombre a ingresar en la colección");
+  nombres.push(nomb);
+}
+while(var cont>0)
+{
+  alert("La colección se actualizó");
+}
+
+  
+</script>-->
+
+<!--Mostrar meses del año
+<script>
+  var meses=['Enero', 'Feb', 'Marz', 'Abril', 'Mayo', 'junio', 'julio', 'agosto', 'sept', 'oct', 'nov', 'dic'];
+  alert("Los meses del años son: "+ meses);
+</script>
+-->
+</body>
+</html>
